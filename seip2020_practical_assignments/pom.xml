@@ -4,9 +4,10 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>myFirstMavenProject</name>
-  <description>mavenProjectForAssigment</description>
+  <name>MavenProjectForAssignemnts</name>
   <modules>
   	<module>gradeshistogram</module>
   </modules>
+  <description>This maven project is used for my assignments in my course Software Engineering in Practice.
+</description>
 </project>

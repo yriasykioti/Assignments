@@ -8,9 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>gradeshistogram</artifactId>
-	<name>firstAssigment</name>
-	<description>firstAssigment-gradeshistogram
-</description>
+	<name>gradesHistogram</name>
 
 	<dependencies>
 		<dependency>
@@ -47,4 +45,6 @@
 			</plugin>
 		</plugins>
 	</build>
+	<description>This module uses the maven-assembly-plugin and the dependency for jfreechart.
+The purpose of this module is to read a file with grades from cmd and generate a histogram with the grades' frequencies.</description>
 </project>
