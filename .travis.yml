@@ -9,7 +9,6 @@ branches:
   - development
 
 before_script:
-  - cd project
   - ls -la
 
 script:
