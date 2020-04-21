@@ -1,8 +1,6 @@
 # SEIP2020 Practical Assignments
 
 The purpose of this repository is to deliver all my practical assignments which are written in Java for my course of Software Engineering in Practice.
-[HistogramGenerator](##HistogramGenerator)
-[UnitTesting](##UnitTesting)
 
 ## HistogramGenerator
 
