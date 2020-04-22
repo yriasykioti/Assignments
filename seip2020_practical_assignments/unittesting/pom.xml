@@ -30,5 +30,7 @@
 	</dependencies>
 	
 	
-	<description>The purpose of this module is to get familiar with the tools of unit testing.  </description>
+	<description>The purpose of this module is to get familiar with the tools of unit testing. 
+It contains three classes in the math package which implement simple arithmetic operations and four test classes that test their functionality and the exceptions that should be thrown. 
+In the io package there is one class which reads a file with numbers and returns an array of integers from this file and one test class to test again its functionality and exceptions. </description>
 </project>
