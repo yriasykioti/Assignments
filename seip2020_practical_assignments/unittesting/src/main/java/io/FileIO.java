@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import junit.framework.Assert;
+
 /**
 * The FileIO provides simple file input/output operations
 * that serve as hands-on practice on Unit Testing.
@@ -38,12 +40,13 @@ public class FileIO {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
-				int number = Integer.parseInt(line);
-				numbersList.add(number);
+					int number = Integer.parseInt(line);
+					numbersList.add(number);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		
 		if (numbersList.size() == 0) 
 			throw new IllegalArgumentException("Given file is empty");
