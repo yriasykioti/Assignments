@@ -1,5 +1,7 @@
 # SEIP2020 Practical Assignments
 
+https://travis-ci.com/yriasykioti/Assignments.svg?token=fxVCNPq89k4nXsgNxnUP&branch=development
+
 The purpose of this repository is to deliver all my practical assignments which are written in Java for my course of Software Engineering in Practice.
 i
 ## HistogramGenerator
