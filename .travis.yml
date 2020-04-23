@@ -9,6 +9,7 @@ branches:
   - development
 
 before_script:
+  - cd seip2020_practical_assignments      
   - ls -la
 
 script:
