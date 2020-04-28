@@ -3,7 +3,7 @@ package io;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import java.io.IOException;
+
 
 import org.junit.Assert;
 import org.junit.Rule;
@@ -23,11 +23,14 @@ public class FileIOTest {
 
 	}
 	
-	@Test (expected = IOException.class)
+	@Test
 	public void testReadFileContainsInvalidEntries() {
+		int[] expectedNumbers = new int[] {
+				5,12};
 		String notvalidInputFilepath = resourcesPath.concat("numbers_invalid.txt");
-		fileio.readFile(notvalidInputFilepath);
+		Assert.assertArrayEquals(expectedNumbers,fileio.readFile(notvalidInputFilepath));
 	}
+	
 	
 	@Rule
 	public ExpectedException thrown= ExpectedException.none();
