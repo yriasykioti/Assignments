@@ -13,22 +13,26 @@ public class ArrayOperationsTest {
 	@Test
 	public void test_findPrimesInFile_Mocking() {
 		MyMath mymath = mock(MyMath.class);
-		FileIO fileio = mock(FileIO.class);
-		
-		String validInputFilepath = resourcesPath.concat("numbers_valid.txt");
-		int [] validnumbers= {5, 7 , 3, 4 , 5 , 6 , 2, 91};
-		                  
-		when(mymath.isPrime(2)).thenReturn(true);
+
+		when(mymath.isPrime(15)).thenReturn(false);
 		when(mymath.isPrime(7)).thenReturn(true);
-		when(mymath.isPrime(25)).thenReturn(false);
+		when(mymath.isPrime(8)).thenReturn(false);
+		when(mymath.isPrime(5)).thenReturn(true);
+		when(mymath.isPrime(9)).thenReturn(false);
+		when(mymath.isPrime(17)).thenReturn(true);
+		when(mymath.isPrime(26)).thenReturn(false);
+		when(mymath.isPrime(29)).thenReturn(true);
+
+		String validInputFilepath = resourcesPath.concat("numbers.txt");
+		int[] validnumbers = { 15, 7, 8, 5, 9, 17, 26, 29 };
+
+		FileIO fileio = mock(FileIO.class);
 		when(fileio.readFile(validInputFilepath)).thenReturn(validnumbers);
-		
-		String primeFilePath= resourcesPath.concat("numbers.txt");
-		
-		
-		Assert.assertArrayEquals(new int[]{7 , 5 ,17, 29}, arop.findPrimesInFile(fileio, primeFilePath, mymath));
-		
-		
+
+		String primeFilePath = resourcesPath.concat("numbers.txt");
+
+		Assert.assertArrayEquals(new int[] { 7, 5, 17, 29 }, arop.findPrimesInFile(fileio, primeFilePath, mymath));
+
 	}
 
 }
