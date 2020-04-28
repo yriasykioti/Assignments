@@ -39,9 +39,12 @@ public class FileIO {
 		try {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
+			String regex = "[0-9]+|-\\d+";
 			while ((line = reader.readLine()) != null) {
-					int number = Integer.parseInt(line);
-					numbersList.add(number);
+				if (line.matches(regex)) {
+						int number = Integer.parseInt(line);
+						numbersList.add(number);
+				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
