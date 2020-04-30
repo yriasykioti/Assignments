@@ -20,6 +20,12 @@ public class ArithmeticOperationsTest {
 		Assert.assertEquals(0, arop.divide(0, 2), 0.00001);
 	}
 
+
+	@Test 
+	public void test_divide_normalcase() {
+		Assert.assertEquals(25, arop.divide(50, 2), 0.00001);
+	}
+
 	
 	
 	@Rule
