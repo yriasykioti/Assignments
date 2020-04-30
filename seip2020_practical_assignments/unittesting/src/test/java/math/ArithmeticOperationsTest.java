@@ -15,6 +15,12 @@ public class ArithmeticOperationsTest {
 		arop.divide(10, 0);
 	}
 	
+	@Test 
+	public void test_divide_zero_numerator() {
+		Assert.assertEquals(0, arop.divide(0, 2), 0.00001);
+	}
+
+	
 	
 	@Rule
 	public ExpectedException thrown= ExpectedException.none();
