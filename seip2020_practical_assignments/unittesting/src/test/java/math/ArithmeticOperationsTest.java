@@ -30,6 +30,11 @@ public class ArithmeticOperationsTest {
 		thrown.expectMessage("y shouldn't be zero");
 		arop.multiply(8, 0);
 	}
+	
+	@Test
+	public void test_multiply_normalcase() {
+		Assert.assertEquals(30, arop.multiply(5, 6));
+	}
 	@Test
 	public void test_multiply_integer() {
 		thrown.expectMessage("The product does not fit in an Integer variable");
